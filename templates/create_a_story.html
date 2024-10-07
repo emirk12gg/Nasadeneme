@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create A Story</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- Google Fonts ile modern bir yazı tipi ekliyoruz -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/hakkimizda">About Us</a></li>
+                <li><a href="/iletisim">Contact</a></li>
+                <li><a href="/create_a_story">Create A Story</a></li>
+                <li><a href="https://forms.office.com/r/mxSJK07kGB" class="share-story">Share Your Story</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <!-- Create A New Story Bölümü -->
+        <section class="create-story">
+            <h2>Create Your Story With AI</h2>
+            
+            <div class="story-form">
+                <!-- Kullanıcının hikaye gireceği metin kutusu -->
+                <textarea class="custom-textarea" placeholder="Variables you want to specify...(If you encounter a server error, please try again.)"></textarea>
+                <!-- Gönder butonu -->
+                <button class="send-button">Generate Story</button>
+            </div>
+        </section>
+
+        <!-- Available Resources Bölümü -->
+        <section class="available-resources">
+            <h2>Available Resources</h2>
+            <div class="resources-container">
+                <div class="resource-item">
+                    <img src="https://i.hizliresim.com/em0nwfo.png" alt="Resource 1">
+                    <p>
+                        The chart above highlights the alarming changes in global seasonal temperatures from 1961 to 2019. Each line represents how much temperatures have shifted over time in winter, spring, summer, and fall. The blue line, which represents winter, showcases a sharp rise, culminating in "the hottest winter" recorded in recent history.<br><br>
+                        This trend demonstrates the increasing severity of climate change, particularly the rapid warming of winter seasons. Such changes are not just numbers on a graph—they have tangible consequences for ecosystems, wildlife, and human societies. Warmer winters disrupt natural cycles, affect agriculture, and push certain species towards extinction.
+                    </p>
+                </div>
+                <div class="resource-item">
+                    <img src="https://i.hizliresim.com/j3mi9ud.png" alt="Resource 2">
+                    <p>
+                        The chart above highlights the ten countries that have experienced the most significant temperature increases in recent decades. Notably, Svalbard and Jan Mayen Islands have seen a staggering 3.3°C increase, far surpassing the other regions. Countries such as Bahrain, Kuwait, Russia, Slovenia, and Belarus follow closely behind with around 1.9°C temperature rise.<br><br>
+                        This data serves as a crucial wake-up call: climate change is not a distant problem. These countries, spread across different climates and geographies, show that no region is immune. The rising temperatures are altering ecosystems, threatening biodiversity, and affecting human livelihoods. From melting Arctic ice to desert heatwaves, these figures represent more than just numbers—they represent a future that is rapidly shifting towards instability.
+                    </p>
+                </div>
+                <div class="resource-item">
+                    <img src="https://i.hizliresim.com/9ufzsr3.png" alt="Resource 3">
+                    <p>
+                        The chart above shows the ten countries that have experienced the lowest temperature changes over the last decades. South Georgia and the South Sandwich Islands, as well as Pitcairn Islands, stand out with minimal increases of 0.16°C and 0.17°C, respectively. Even countries like Antarctica and Argentina, known for their harsh climates, have only seen moderate increases of around 0.66°C.<br><br>
+                        While these regions show relatively smaller temperature rises compared to other parts of the world, they are still not immune to the effects of climate change. Even these smaller changes can have significant impacts on fragile ecosystems, wildlife, and human activities, particularly in remote and sensitive areas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+         <!-- Yeni Buton Bölümü -->
+        <section class="more-section">
+            <a href="/source" class="more-button">Learn More</a>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Climate Change Briefing. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

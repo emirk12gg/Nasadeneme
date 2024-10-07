@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hakkımızda</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/hakkimizda">About Us</a></li>
+                <li><a href="/iletisim">Contact</a></li>
+                <li><a href="/create_a_story">Create A Story</a></li>
+                <li><a href="https://forms.office.com/r/mxSJK07kGB" class="share-story">Share Your Story</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-us">
+            <div class="profile-container">
+                <img src="https://i.hizliresim.com/5ny4ikl.jpg" class = profile-pic>
+                <div class="profile-text">
+                    <p>Ahmet Altuğ Çolak stands out as a student with a wide range of experience in technology and engineering. While he is actively involved in the programming team at FRC Team 6429 | 4th Dimension, he also continues his studies on artificial intelligence and Python at Çiçekli AI. He was a finalist in the Flying Car Simulation Competition at TEKNOFEST and used various programming languages, especially Python, extensively in this process. He has designed underwater vehicles and unmanned aerial vehicles and gained experience in competitions in these fields. He also gained long-term experience in various teams in robotics competitions such as FIRST LEGO League (FLL).</p>
+                </div>
+            </div>
+
+            <div class="profile-container">
+                <img src="https://i.hizliresim.com/9wowtwr.jpg" class = profile-pic>
+                <div class="profile-text">
+                    <p>Emir Gündoğan, is a student interested in the intricacies of artificial intelligence and software. While actively working as a software member in the programming team of FRC Team 6429 | 4th Dimension, he also works on artificial intelligence and Python as a member of Çiçekli AI. He was a finalist in the Flying Car Simulation Competition at TEKNOFEST and was awarded the 12th place in Turkey. He designed underwater vehicles and UAV vehicles and took part in competitions, and in this process, he used Python, Java, C++, HTML, CSS, Javascript programming language intensively. He also actively participates in robotics competitions such as FIRST LEGO League (FLL) as a software captain.</p>
+                </div>
+            </div>
+            
+            <div class="profile-container">
+                <img src="https://i.hizliresim.com/ejurzmc.jpg" class = profile-pic>
+                <div class="profile-text">
+                    <p>Bora KAYAĞ has software development competence with Python. He is familiar with Arduino and has participated in FLL (First Lego League) competition three times before. He has participated in multiple competitions and trainings in the field of entrepreneurship. He is a member of the Computer Aided Design (CAD) sub-team at Laissez Faire and has also received SOLIDWORKS training at Tekyaz. He won the regional finals with a project in TUBITAK and ranked first in Turkey with 500 full points in the LGS exam held across Turkey. He also plays basketball under license and has a brown belt in karate. He is currently preparing for the Astrophysics Olympics.</p>
+                </div>
+            </div>
+
+            <div class="profile-container">
+                <img src="https://i.hizliresim.com/f0cz36i.jpeg" class = profile-pic>
+                <div class="profile-text">
+                    <p>Erin Onat Tiryakioğlu is a Computer Aided Design (CAD) sub-team member at FRC Team 8056 | Laissez Faire. He has attended SOLIDWORKS CSWP and CSWA trainings at Tekyaz, and completed the SOLIDWORKS CAD Fundamentals course offered by Dassault Systèmes, giving his a strong foundation in CAD software. He is also actively involved in the FIRST LEGO League (FLL) Wanderlust team.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Climate Change Briefing. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
