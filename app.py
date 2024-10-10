@@ -6,7 +6,7 @@ import json
 app = Flask(__name__)
 CORS(app)
 
-HF_TOKEN = "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"
+HF_TOKEN = ""# write your own Token ID
 repo_id = "mistralai/Mixtral-8x7B-Instruct-v0.1"
 
 llm_client = InferenceClient(
